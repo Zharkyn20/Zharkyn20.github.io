@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+	<link rel="shortcut icon" type="image/x-icon" href="icon.ico" />
+  <title>Trip in Kyrgyzstan</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Trip in Kyrgyzstan">
+  <meta name="keywords" content="Trip, Kyrgyzstan, Recreation">
+  <meta name="author" content="Zharkkyn Askat  kyzy">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS stylesheet-->
+  <link rel="stylesheet" href="mystyle.css">
+  <script src="myjs.js"></script>
+  <!-- Bootstrap stylesheet-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<!-- Background video-->
+	<div class="fullscreen-bg">
+	<video autoplay muted loop class="fullscreen-bg__video">
+  <source src="myvideo.mp4" type="video/mp4">
+</video>
+</div>
+
+<!-- Header-->
+	<div class="header">
+	<!-- Header Logo-->		
+  <img src="icon.ico" alt="Icon" class="logo">
+  <a href="#" id="hd_t">Trip to Kyrgyzstan</a>
+  <div class="right">
+  	
+    <button type="button" class="hd_btn" id="home">Home</button>
+    <button type="button" class="hd_btn">Contact Us</button>
+    <button type="button" class="hd_btn">About</button>
+    <button type="button" class="hd_btn">Prepayment</button>
+  </div>
+</div>
+
+<button type="button" class="button" onclick="openForm()">Book Now!</button>
+
+<div class="form-popup" id="myForm">
+<form class="form-container">
+  <h1 id="style">Booking</h1>
+
+    <label for="name"><b>Name, Surname:</b></label>
+    <input type="text" placeholder="Enter Name, Surname" name="name" required> <br>
+
+    <label for="email"><b>Email:</b></label> 
+    <input type="text" placeholder="Enter Email" name="email" required> <br>
+
+    <label for="phone"><b>Contact phone number:</b></label>
+    <input type="tel" placeholder="Enter your phone" name="phone" required> <br>
+
+    <label for="tourNo"><b>Choose the tour:</b></label>
+    <input type="text" placeholder="Enter the tour number" name="tourNo" required> <br>
+
+    <button type="submit" class="btn">Book</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+</form>
+</div>
+
+
+
+<!-- Footer-->
+	<footer class="footer">
+  <p>Author: Zharkyn Askat kyzy<br>
+  <a href="mailto:zharkynaskatkyzy@gmail.com">Mail Us!</a> </p>
+</footer>
+
+<p class="content">
+<img src="first.jpg" alt="first">
+<img src="second.jpg" alt="second">
+<img src="third.jpg" alt="third">
+<img src="fourth.jpg" alt="fourth">
+</p>
+
+</body>
+</html>
