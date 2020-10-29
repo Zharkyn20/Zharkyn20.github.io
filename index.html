@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+	<link rel="shortcut icon" type="image/x-icon" href="/media/icon.ico" />
+  <title>Trip in Kyrgyzstan</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Trip in Kyrgyzstan">
+  <meta name="keywords" content="Trip, Kyrgyzstan, Recreation">
+  <meta name="author" content="Zharkkyn Askat  kyzy">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS stylesheet-->
+  <link rel="stylesheet" href="mystyle.css">
+  <script src="myjs.js"></script>
+  <!-- Bootstrap stylesheet-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<!-- Background video-->
+	<div class="fullscreen-bg">
+	<video autoplay muted loop class="fullscreen-bg__video">
+  <source src="/media/myvideo.mp4" type="video/mp4">
+</video>
+</div>
+
+<!-- Header-->
+	<div class="header">
+	<!-- Header Logo-->		
+  <img src="/media/icon.ico" alt="Icon" class="logo">
+  <a href="#" id="hd_t">Trip to Kyrgyzstan</a>
+  <div class="right">
+  	
+    <button type="button" class="hd_btn" id="home">Home</button>
+    <button type="button" class="hd_btn" onclick="openContacts()">Contact Us</button>
+    <button type="button" class="hd_btn" onclick="openTable()">About</button>
+    <button type="button" class="hd_btn" onclick="openPrep()">Prepayment</button>
+  </div>
+</div>
+
+<button type="button" class="button" onclick="openForm()">Book Now!</button>
+
+<div class="form-popup" id="myForm">
+<form class="form-container">
+  <h1 id="style">Booking</h1>
+
+    <label for="name"><b>Name, Surname:</b></label>
+    <input type="text" placeholder="Enter Name, Surname" id="name" required> <br>
+
+    <label for="email"><b>Email:</b></label> 
+    <input type="text" placeholder="Enter Email" id="email" required> <br>
+
+    <label for="phone"><b>Contact phone number:</b></label>
+    <input type="tel" placeholder="Enter your phone" id="phone" required> <br>
+
+    <label for="tourNo"><b>Choose the tour:</b></label>
+    <input type="text" placeholder="Enter the tour number" id="tourNo" required> <br>
+
+    <button type="submit" class="btn">Book</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+</form>
+</div>
+
+<div>
+  <p id="contacts" class="contacts">
+    <b>
+    Contact number: +996 500 123 323 <br>
+    Gmail: zharkynaskatkyzy@gmail.com <br>
+  </b>
+    <button type="button" class="cancel_btn" onclick="closeContacts()">Close</button>
+  </p>
+
+</div>
+
+<div class="table-container" id="about">
+  <p>
+    Information about tours:
+  </p>
+   <table class="table table-striped">
+     <thead>
+       <tr>
+        <th>Tour Number (ID):</th>
+        <th>Duration of tour:</th>
+        <th>Start city:</th>
+        <th>Price:</th>
+      </tr>
+      </thead>
+     <tbody id="tbody">
+      <tr>
+        <td>1</td>
+        <td>3 days</td>
+        <td>Bishkek city</td>
+        <td>500$</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>4 days</td>
+        <td>Bishkek city</td>
+        <td>650$</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>5 days</td>
+        <td>Bishkek city</td>
+        <td>700$</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>3 days</td>
+        <td>Osh city</td>
+        <td>500$</td>
+      </tr>
+      <button type="button" class="cancel_btn" onclick="closeTable()">Close</button>
+      </tbody> 
+   </table>
+</div>
+
+<div class="prepayment" id="prep">
+  <p>
+    Bank details: 5671291889675789 <br>
+    <button type="button" class="cancel_btn" onclick="closePrep()">Close</button>
+  </p>
+</div>
+
+
+<!-- Footer-->
+	<footer class="footer">
+  <p>Author: Zharkyn Askat kyzy<br>
+  <a href="mailto:zharkynaskatkyzy@gmail.com">Mail Us!</a> </p>
+</footer>
+
+<p class="content">
+<img src="/media/first.jpg" alt="first">
+<img src="/media/second.jpg" alt="second">
+<img src="/media/third.jpg" alt="third">
+<img src="/media/fourth.jpg" alt="fourth">
+</p>
+
+</body>
+</html>
