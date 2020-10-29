@@ -37,9 +37,9 @@
   <div class="right">
   	
     <button type="button" class="hd_btn" id="home">Home</button>
-    <button type="button" class="hd_btn">Contact Us</button>
-    <button type="button" class="hd_btn">About</button>
-    <button type="button" class="hd_btn">Prepayment</button>
+    <button type="button" class="hd_btn" onclick="openContacts()">Contact Us</button>
+    <button type="button" class="hd_btn" onclick="openTable()">About</button>
+    <button type="button" class="hd_btn" onclick="openPrep()">Prepayment</button>
   </div>
 </div>
 
@@ -50,22 +50,85 @@
   <h1 id="style">Booking</h1>
 
     <label for="name"><b>Name, Surname:</b></label>
-    <input type="text" placeholder="Enter Name, Surname" name="name" required> <br>
+    <input type="text" placeholder="Enter Name, Surname" id="name" required> <br>
 
     <label for="email"><b>Email:</b></label> 
-    <input type="text" placeholder="Enter Email" name="email" required> <br>
+    <input type="text" placeholder="Enter Email" id="email" required> <br>
 
     <label for="phone"><b>Contact phone number:</b></label>
-    <input type="tel" placeholder="Enter your phone" name="phone" required> <br>
+    <input type="tel" placeholder="Enter your phone" id="phone" required> <br>
 
     <label for="tourNo"><b>Choose the tour:</b></label>
-    <input type="text" placeholder="Enter the tour number" name="tourNo" required> <br>
+    <input type="text" placeholder="Enter the tour number" id="tourNo" required> <br>
 
     <button type="submit" class="btn">Book</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
 </form>
 </div>
 
+<div>
+  <p id="contacts" class="contacts">
+    <b>
+    Contact number: +996 500 123 323 <br>
+    Gmail: zharkynaskatkyzy@gmail.com <br>
+  </b>
+    <button type="button" class="cancel_btn" onclick="closeContacts()">Close</button>
+  </p>
+
+</div>
+
+<div class="table-container" id="about">
+  <p>
+    Information about tours:
+  </p>
+   <table class="table table-striped">
+     <thead>
+       <tr>
+        <th>Tour Number (ID):</th>
+        <th>Duration of tour:</th>
+        <th>Start city:</th>
+        <th>Price:</th>
+      </tr>
+      </thead>
+     <tbody id="tbody">
+      <tr>
+        <td>1</td>
+        <td>3 days</td>
+        <td>Bishkek city</td>
+        <td>500$</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>4 days</td>
+        <td>Bishkek city</td>
+        <td>650$</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>5 days</td>
+        <td>Bishkek city</td>
+        <td>700$</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>3 days</td>
+        <td>Osh city</td>
+        <td>500$</td>
+      </tr>
+      <button type="button" class="cancel_btn" onclick="closeTable()">Close</button>
+      </tbody> 
+   </table>
+</div>
+
+<div class="prepayment" id="prep">
+  <p>
+    Bank details: 5671291889675789 <br>
+    <button type="button" class="cancel_btn" onclick="closePrep()">Close</button>
+  </p>
+</div>
 
 
 <!-- Footer-->
