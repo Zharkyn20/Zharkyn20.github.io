@@ -1,28 +1,16 @@
+body {
+  background-image: url('/Web Project/media/backgr.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 a {
   text-decoration: none;
 }
 
-
-
 img {
   border-radius: 50%;
-}
-.fullscreen-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
-}
-
-.fullscreen-bg__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .button {
@@ -72,9 +60,11 @@ img {
 	width: 3vw;
 	height: 3vw;
 }
+
 .right {
   float: right;
 }
+
 .footer {
   position: fixed;
   bottom: 0;
@@ -91,14 +81,12 @@ margin: 100vh 0 0 0;
 width: 100%;
 }
 
-
 #style {
   font-style: italic;
   font-family: cursive;
   font-size: 32px;
   color: black;
 }
-
 
 /* The popup form - hidden by default */
 .form-popup {
